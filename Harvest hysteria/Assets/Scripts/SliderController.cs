@@ -9,6 +9,7 @@ public class SliderController : MonoBehaviour
     private BoxCollider2D hitboxCollider;
     void Start()
     {
+        sliderHitbox.transform.position += new Vector3(Random.Range(-.3f, .3f), 0, 0);
         pointerCollider = sliderPointer.GetComponent<BoxCollider2D>();
         hitboxCollider = sliderHitbox.GetComponent<BoxCollider2D>();
     }
